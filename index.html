@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Header: Logo & Navigation -->
+    <header>
+        <div class="logo-icon">
+            <img src="asset/Logo RevoU.png" alt="Logo">
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-button">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>
+                Hi <span id="user-greeting">User</span>, Welcome to our Website
+              </h1>
+            <p id="slogan">"Do what you can, learn what you can't!"</p>
+            <div class="slides">
+                <img class="img-slideshow" src="asset/background1.jpg" alt="Slideshow Image 1">
+                <img class="img-slideshow" src="asset/background2.jpg" alt="Slideshow Image 2">
+                <img class="img-slideshow" src="asset/background3.jpg" alt="Slideshow Image 3">
+            </div>
+        </section>
+<hr>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h1>MY Portfolio</h1>
+            <div class="portfolio-gallery">
+                <img class="porto-img" src="asset/portofolio1.jpg" alt="Portfolio 1">
+                <img class="porto-img" src="asset/portofolio2.jpg" alt="Portfolio 2">
+                <img class="porto-img" src="asset/portofolio3.jpg" alt="Portfolio 3">
+            </div>
+        </section>
+<hr>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form action="#" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="number" id="phone" placeholder="Your Phone Number" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <section class="form-content" id="result-form" style="display: none;">
+            <h2>Thank You For Your Message</h2>
+            <p>We will reply to your message as soon as possible</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 - Ahmad Iqbal - Do Your Best For What You Can Do!</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

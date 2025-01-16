@@ -1,0 +1,250 @@
+/*-- Body Style --*/
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- Head Stlye --*/
+header {
+    background-color: #dbd6d6;
+    padding: 10px 20px;
+    display: flex;
+    top: 0px;
+    z-index: 2;
+    border-bottom: 1px solid #111111;
+}
+
+.logo-icon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.slogan {
+    font-style:italic;
+    font-size: x-large;
+}
+
+
+/*-- Navigation Style --*/
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 5px;  
+}  
+
+.logo-icon img {  
+    width: 50px;  
+    height: 50px;  
+}  
+  
+nav {  
+    margin: 20px 0;  
+    text-align: end; 
+    justify-content: flex-end; 
+    display: flex;   
+}  
+  
+nav a {  
+    color: #0f0303;  
+    text-decoration: none;  
+    padding: 5px 10px;   
+}  
+  
+nav a:hover {  
+    background: #333;  
+    color: #fff;  
+}  
+  
+.nav-button {  
+    display: flex-end;  
+    gap: 10px;  
+    align-items: center;  
+} 
+
+
+/* Main content styling */
+main {
+    margin: 20px;
+    padding: 0px;
+    align-items: center;
+    font-size: larger;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+
+/* Banner Auto Slides */
+.slides {  
+    display: flex;  
+    flex-direction: column;  
+    align-content: center;  
+    justify-content: center;  
+    align-items: center;  
+    height: 500px;  
+}  
+  
+.img-slideshow {    
+    width: 100%;  
+    height: auto;  
+    min-height: 450px;  
+    display: block;  
+    object-fit: cover; 
+}  
+
+.slide-button {
+    button {
+        background-color: #0e0d0d;
+        color: white;
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/* Portfolio */
+.porto-img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 160px;
+}
+
+.porto-img:hover {
+    transform: scale(1.1);
+}
+
+
+/*-- Form Section --*/
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #4753ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #290baf;
+}
+
+
+
+/* Footer */
+.footer {
+    font-size: large;
+    text-align: center;
+    padding: 1px;
+    background-color:#23a9f7;
+}
+
+
+/* Default navbar style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #319ed1;
+}
+
+.nav-button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Style untuk tombol toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styling untuk layar kecil */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Tampilkan tombol menu */
+    }
+
+    .nav-button {
+        flex-direction: column; /* Susun menu secara vertikal */
+        display: none; /* Tersembunyi secara default */
+        width: 100%;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-button a {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nav-button a:hover {
+        background: #555;
+        color: white;
+    }
+
+    /* Tampilkan menu dropdown saat tombol diaktifkan */
+    .nav-button.show {
+        display: flex;
+    }
+}
